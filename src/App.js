@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+// import Side from './components/Side' //lecture 1
+import Post from './redux/Post'    //lecture 2
+// import './App.css'
+// import PostForm from './redux/PostForm'
 
-function App() {
+import TotalBuild from './pages/TotalBuild'
+
+export default function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      {/* <Side/> */}
+      {/* <PostForm/>
+      <hr/>
+      <Post/> */}
+      
+     <TotalBuild />
 
-export default App;
+    </div>
+  )
+}
